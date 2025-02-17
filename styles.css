@@ -40,9 +40,9 @@ nav{
 }
 
 #namestyle{
-    font-family: fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: yellow;
-    text-shadow: 2px 3px rgb(240, 18, 18);
+    text-shadow: 3px 3px rgb(240, 18, 18);
 }
 
 #cvbutton{
@@ -78,7 +78,7 @@ li{
 .sectionheading{
     font-size: xx-large;
     text-align: center;
-    font-family: fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: yellow;
     margin-right: 250px;
 }
