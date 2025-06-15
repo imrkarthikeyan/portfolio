@@ -12,7 +12,7 @@ export default function Contact(){
                     <span className="absolute top-1/2 right-[-55px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
                 </h1>
             </div>
-            <div className="p-5 lg:pl-60 text-center lg:flex lg:items-center w-full lg:mr-50">
+            <div className="p-5 lg:pl-60  text-center lg:flex lg:items-center w-full lg:mr-50">
                 <div className="text-white bg-gray-900 p-15  flex text-center lg:flex-row flex-col w-full">
                     <div className="flex lg:pl-40 flex-col text-center">
                         <h2 className="text-3xl">Get In Touch</h2>
@@ -28,15 +28,64 @@ export default function Contact(){
                         </div>
                         <div></div>
                     </div>
-                    <div className="pt-10 lg:pt-2 lg:pl-60">
-                        <div className="pt-7 bg-gray-800 p-5 gap-5 flex flex-col">
-                            <input type="text" placeholder="Name" className="border rounded bg-white text-black-900 lg:w-[350px] h-10"/>
-                            <input type="text" placeholder="Mail" className="border rounded bg-white lg:w-[350px] h-10"/>
-                            <input type="text" placeholder="Message" className="border rounded bg-white lg:[350px] h-40"/>
-                            <div className="flex text-center justify-center pt-7">
-                                <button className="border rounded w-[70px] p-1 flex text-center justify-center">Send</button>
-                            </div>
+                    <div className="pl-50">
+                        <form 
+                        onSubmit={async (e) => {
+                            e.preventDefault();
+                            const form = e.target;
+
+                            const formData = {
+                            name: form.name.value,
+                            email: form.email.value,
+                            message: form.message.value,
+                            };
+
+                            const response = await fetch("https://formspree.io/f/xgvyyykr", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(formData)
+                            });
+
+                            if (response.ok) {
+                            alert("Message sent successfully!");
+                            form.reset();
+                            } else {
+                            alert("Failed to send message.");
+                            }
+                        }}
+                        className="pt-7 bg-gray-800 p-5 gap-5 flex flex-col"
+                        >
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            className="border rounded bg-white text-[Black] pl-3 lg:w-[380px] h-10"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Mail"
+                            className="border rounded bg-white text-[Black] pl-3 lg:w-[380px] h-10"
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            className="border rounded bg-white text-black pl-3 pt-2 lg:w-[380px] h-40 resize-none"
+                            required
+                        />
+                        <div className="flex text-center justify-center pt-7">
+                            <button
+                            type="submit"
+                            className="border rounded w-[70px] p-1 flex text-center justify-center bg-gray-700"
+                            >
+                            Send
+                            </button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
