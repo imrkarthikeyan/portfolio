@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-Typewriter';
 
 export default function Home(){
     return(
-        <div className="bg-cover bg-gray-950 lg:gap-30 gap-10 w-full min-h-screen bg-center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 text-white items-center">
+        <div className="bg-cover bg-gray-950 lg:gap-30 gap-10 w-full min-h-screen bg-center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 text-white items-center lg:pt-0 pt-20">
             <div className='items-center lg:pl-70 text-center'>
                 <h1 className='text-5xl pb-5 pt-4'>Hello, Myself</h1>
                 <h2 className='pb-7 font-bold text-6xl text-[Yellow] drop-shadow-[2px_2px_Orange]'>Karthikeyan R</h2>

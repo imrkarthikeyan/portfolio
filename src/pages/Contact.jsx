@@ -28,7 +28,7 @@ export default function Contact(){
                         </div>
                         <div></div>
                     </div>
-                    <div className="pl-50">
+                    <div className="pt-10 lg:pt-0 lg:pl-50">
                         <form 
                         onSubmit={async (e) => {
                             e.preventDefault();
