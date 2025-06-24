@@ -31,7 +31,9 @@ export default function Home(){
                             Download CV
                         </a>
                     </div>
+
                 </div>
+
             </div>
             <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[30vw] flex items-center'>
                 <img className='rounded pt-10 overflow-hidden' src={rk} alt="Profile image" />
