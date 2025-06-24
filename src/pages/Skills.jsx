@@ -12,21 +12,21 @@ import { SiCss3, SiGeeksforgeeks, SiGit, SiGithub, SiHtml5, SiJavascript, SiPost
 export default function Skills(){
     return(
         <div className="text-white pt-10 justify-center flex flex-col text-center bg-gray-950 bg-cover min-h-screen">
-            <div>
+            <div className='pt-5'>
                 <h1 className="text-3xl font-bold mb-5 text-[DodgerBlue] relative inline-block font-[500]">
                     <span className="absolute mr-1 top-1/2 left-[-60px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
                     Skills
                     <span className="absolute top-1/2 right-[-55px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
                 </h1>
             </div>
-            <div className='grid lg:grid-cols-7  grid-cols-3 gap-4 lg:pl-30 lg:px-30 lg:gap-5 mb-5 p-5'>
+            <div className='grid lg:grid-cols-6  grid-cols-3 gap-4 lg:pl-30 lg:px-30 lg:gap-5 mb-5 p-5'>
                 <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
                     whileInView={{opacity:1, y:0}}
                     whileHover={{scale:1.1}}
                     viewport={{once:true,amount:0.3}}
-                    transition={{duration:0.9}}
+                    transition={{duration:0.5}}
                 >
                     <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
                         <SiHtml5 className='text-7xl w-[70px] text-orange-700'/>
@@ -146,7 +146,7 @@ export default function Skills(){
                     </div>
                 </motion.div>
                 
-                <motion.div
+                {/* <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
                     whileInView={{opacity:1, y:0}}
@@ -158,7 +158,7 @@ export default function Skills(){
                         <SiPostgresql className='text-7xl w-[70px] text-blue-500'/>
                         <p className='p-3 pt-5 font-semibold'>Postgresql</p>
                     </div>
-                </motion.div>
+                </motion.div> */}
                 
                 <motion.div
                     className='cursor-pointer'

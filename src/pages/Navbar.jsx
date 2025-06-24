@@ -20,10 +20,14 @@ export default function Navbar({onReservation,onAbout,onHome,onSkills,onProject,
         return()=>window.removeEventListener('scroll', handleMove);
     },[])
 
+    const onGithub=()=>{
+        window.open("https://github.com/imrkarthikeyan","_blank")
+    }
+
 
     return(
         <div className={`text-white fixed w-full top-0 flex items-center z-50 ${moved ? 'bg-gray-800' :''}`}>
-            <div className="flex items-center md:pl-10 py-3 pl-3">
+            <div className="flex hover:text-[Gray] items-center md:pl-10 py-3 pl-3" onClick={onGithub}>
                 <span className=" cursor-pointer font-bold flex items-center"><SiGithub className="mr-2 text-3xl"/>Github</span>
             </div>
             <div className="flex-grow"></div>
