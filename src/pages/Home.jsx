@@ -21,7 +21,16 @@ export default function Home(){
                 </div>
                 <p className='text-xl'>2nd Year B.Tech Information Technology</p>
                 <div className='pt-7'>
-                    <button className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg'>Download CV</button>
+                    <div className='pt-7'>
+                        <a
+                            href="https://drive.google.com/uc?export=download&id=1hvcpBnbSKKIfjSi07j5-0vjrOROT4s3Z"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-600 transition duration-300'
+                        >
+                            Download CV
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[30vw] flex items-center'>
