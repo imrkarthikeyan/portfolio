@@ -35,7 +35,7 @@ export default function Contact(){
                 <div className="text-white bg-gray-900 p-15  flex text-center lg:flex-row flex-col w-full">
                     <div className="flex lg:pl-40 flex-col text-center">
                         <h2 className="text-3xl">Get In Touch</h2>
-                        <div className="flex gap-10 items-center text-xl pt-10 pl-10">
+                        <div className="flex gap-10 items-center text-xl pt-10 lg:pl-5">
                             <SiGithub className="text-3xl cursor-pointer" onClick={onGithub}/>
                             <img src={ln} alt="" className="w-[30px] cursor-pointer" onClick={onLinkedin}/>
                             <img src={x} alt="" className="w-[30px] cursor-pointer" onClick={onTwitter}/>
@@ -48,7 +48,7 @@ export default function Contact(){
                         </div>
                         <div></div>
                     </div>
-                    <div className="pt-10 lg:pt-0 lg:pl-50">
+                    <div className="pt-10 lg:pt-0 lg:pl-40">
                         <form 
                         onSubmit={async (e) => {
                             e.preventDefault();
