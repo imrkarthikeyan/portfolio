@@ -1,5 +1,6 @@
-import rk from '../img/rk.jpg';
-import { Typewriter } from 'react-simple-typewriter';
+
+import rk from '../img/rk4.jpg';
+import { Typewriter } from 'react-simple-Typewriter';
 
 export default function Home(){
     return(
@@ -33,10 +34,9 @@ export default function Home(){
                     </div>
 
                 </div>
-
             </div>
-            <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[30vw] flex items-center'>
-                <img className='rounded pt-10 overflow-hidden' src={rk} alt="Profile image" />
+            <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[28vw] flex items-center lg:mt-7'>
+                <img className='rounded-2xl w-full h-auto' src={rk} alt="Profile image" />
             </div>
         </div>
     )
