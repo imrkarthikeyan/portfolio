@@ -1,6 +1,6 @@
 
 import rk from '../img/rk4.jpg';
-import { Typewriter } from 'react-simple-Typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home(){
     return(
