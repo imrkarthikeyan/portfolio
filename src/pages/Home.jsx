@@ -27,7 +27,7 @@ export default function Home(){
                             href="https://drive.google.com/uc?export=download&id=1hvcpBnbSKKIfjSi07j5-0vjrOROT4s3Z"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-600 transition duration-300'
+                            className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-700 transition duration-300'
                         >
                             Download CV
                         </a>
