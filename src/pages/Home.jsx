@@ -10,7 +10,7 @@ export default function Home(){
                 <h2 className='pb-7 font-bold text-6xl text-[Yellow] drop-shadow-[2px_2px_Orange]'>Karthikeyan R</h2>
                 <div className='pb-5 text-2xl'>
                     <Typewriter
-                        words={['Junior Software Developer']}
+                        words={['Aspiring Software Developer']}
                         loop={0}
                         cursor
                         cursorStyle={false}
@@ -20,11 +20,11 @@ export default function Home(){
                     />
                     <span className='text-[DodgerBlue] ml-1 animate-blink'>|</span>
                 </div>
-                <p className='text-xl'>2nd Year B.Tech Information Technology</p>
+                <p className='text-xl'>3rd Year B.Tech Information Technology</p>
                 <div className='pt-7'>
                     <div className='pt-7'>
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1hvcpBnbSKKIfjSi07j5-0vjrOROT4s3Z"
+                            href="https://drive.google.com/uc?export=download&id=19dTX4IUpO_pSog9bErC143rf-E4P6S5Z"
                             target="_blank"
                             rel="noopener noreferrer"
                             className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-700 transition duration-300'
