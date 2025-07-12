@@ -1,5 +1,5 @@
 import { FiExternalLink } from "react-icons/fi";
-import { SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
 import java from '../img/java.png';
 import opm from '../img/openWeatherMap api.png';
 import bms from '../img/bms-img.png';
@@ -8,6 +8,7 @@ import weather from '../img/live weather.mp4';
 import bmsv from '../img/bms.mp4';
 import rks from '../img/rk-s.mp4';
 import mk from '../img/mobile-kitchen.png';
+import hms from '../img/ksrhms.png';
 
 export default function Project(){
 
@@ -29,8 +30,12 @@ export default function Project(){
         window.open("https://github.com/imrkarthikeyan/Banking-System","_blank")
     }
 
-    const onMobileKitchen=()=>{
-        window.open("https://github.com/imrkarthikeyan/Mobile-Kitchen","_blank")
+    const onHmsGithub=()=>{
+        window.open("https://github.com/imrkarthikeyan/hms-frontend","_blank")
+    }
+
+    const onHms=()=>{
+        window.open("https://ksrhostelmanagementsystem.vercel.app/","_blank")
     }
 
     return(
@@ -95,6 +100,52 @@ export default function Project(){
                     playsInline
                     className="w-full h-auto object-cover"
                 /> */}
+                <img src={hms} alt="hms" />
+                <div className="p-4">
+                    <div className="flex justify-between items-center">
+                    <h1 className="text-xl font-bold">Hostel Management System</h1>
+                    <FiExternalLink className="cursor-pointer" onClick={onHmsGithub}/>
+                    </div>
+                    <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onHms}>
+                    ksrhostelmanagementsystem.vercel.app
+                    </p>
+                    <div className="text-left flex flex-wrap gap-1 pt-3">
+                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                        <SiReact className="text-cyan-300" />
+                        <p className="text-sm">React</p>
+                    </div>
+                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                        <SiTailwindcss className="text-blue-500" />
+                        <p className="text-sm">Tailwind CSS</p>
+                    </div>
+                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                        <img src={java} alt="Java" className="w-[20px]" />
+                        <p className="text-sm">Java</p>
+                    </div>
+                    <div className="w-full" />
+                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                        <SiSpringboot className="text-green-600" />
+                        <p className="text-sm">Springboot</p>
+                    </div>
+                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                        <SiFirebase className="text-green-600" />
+                        <p className="text-sm">Firebase auth</p>
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+                <div className="text-white lg:py-0 py-5">
+                <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
+                {/* <video
+                    src={weather}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto object-cover"
+                /> */}
                 <img src={bms} alt="" />
                 <div className="p-4">
                     <div className="flex justify-between items-center">
@@ -124,71 +175,41 @@ export default function Project(){
                     </div>
                     </div>
                 </div>
-                    </div>
-                </div>
-
-                <div className="text-white lg:py-0 py-5">
-                <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
-                <video
-                    src={weather}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto object-cover"
-                />
-                {/* <img src="" alt="" /> */}
-                <div className="p-4">
-                    <div className="flex justify-between items-center">
-                    <h1 className="text-xl font-bold">Live Weather</h1>
-                    <FiExternalLink className="cursor-pointer" onClick={onLwgithub}/>
-                    </div>
-                    <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onLiveweather}>
-                    liveWeatherApplication.vercel.app
-                    </p>
-                    <div className="text-left flex flex-wrap gap-1 pt-3">
-                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                        <SiReact className="text-cyan-300" />
-                        <p className="text-sm">React</p>
-                    </div>
-                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                        <img src={opm} alt="openWeatherMap api" className="w-[20px]" />
-                        <p className="text-sm">openWeatherMap api</p>
-                    </div>
-                    </div>
-                </div>
                 </div>
 
                 </div>
 
                 <div className="text-white pt-4">
-                <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
-                {/* <video
-                    src={weather}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto object-cover"
-                /> */}
-                <img src={mk} alt="" />
-                <div className="p-4">
-                    <div className="flex justify-between items-center">
-                    <h1 className="text-xl font-bold">Mobile-Kitchen</h1>
-                    <FiExternalLink className="cursor-pointer" onClick={onMobileKitchen}/>
+                    <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
+                    <video
+                        src={weather}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto object-cover"
+                    />
+                    {/* <img src={hms} alt="" /> */}
+                    <div className="p-4">
+                        <div className="flex justify-between items-center">
+                        <h1 className="text-xl font-bold">Live Weather</h1>
+                        <FiExternalLink className="cursor-pointer" onClick={onLwgithub}/>
+                        </div>
+                        <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onLiveweather}>
+                            liveWeatherApplication.vercel.app
+                        </p>
+                        <div className="text-left flex flex-wrap gap-1 pt-3">
+                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                            <SiReact className="text-cyan-300" />
+                            <p className="text-sm">React</p>
+                        </div>
+                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                            <img src={opm} alt="openWeatherMap api" className="w-[20px]" />
+                            <p className="text-sm">openWeatherMap api</p>
+                        </div>
+                        </div>
                     </div>
-                    <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onMobileKitchen}>
-                    mobilekitchen.vercel.app
-                    </p>
-                    <div className="text-left flex flex-wrap gap-1 pt-3">
-                    <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                        <SiReact className="text-cyan-300" />
-                        <p className="text-sm">React</p>
                     </div>
-                    </div>
-                </div>
-                </div>
-
                 </div>
             
             </div>
