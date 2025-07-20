@@ -21,8 +21,7 @@ export default function Home(){
                     <span className='text-[DodgerBlue] ml-1 animate-blink'>|</span>
                 </div>
 
-                <p> className='text-xl'>3rd Year B.Tech Information Technology</p>
-
+                <p className='text-xl'>3rd year B.Tech Information Technology</p>
                 <div className='pt-7'>
                     <div className='pt-7'>
                         <a

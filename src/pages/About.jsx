@@ -21,7 +21,7 @@ export default function About(){
                 </h1>
             </div>
             <ol className="pl-10 lg:pl-80 pt-5 text-xl">
-                <li className="pt-5"><p>I am a Second year B.Tech Information Technology student at K.S.Rangasamy College of Technology</p></li>
+                <li className="pt-5"><p>I am a pre-final year B.Tech Information Technology student at K.S.Rangasamy College of Technology</p></li>
                 <li className="pt-7"><p>I'm a passionate Software Developer with a strong foundation in data structures and algorithms.</p></li>
                 <li className="pt-7"><p>Strong in Object-Oriented Programming (OOP)</p></li>
                 <li className="pt-7"><p>Strong problem solving and logical thinking skills</p></li>
