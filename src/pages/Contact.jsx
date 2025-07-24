@@ -34,7 +34,7 @@ export default function Contact(){
             <div className="p-5 lg:pl-60  text-center lg:flex lg:items-center w-full lg:mr-50">
                 <div className="text-white bg-gray-900 p-10 flex flex-col lg:flex-row w-full justify-center gap-16 xl:px-40">
                     <div className="flex flex-col text-center lg:text-left lg:w-1/2">
-                        <h2 className="text-3xl">Get In Touch</h2>
+                        <h2 className="text-3xl md:pl-15">Get In Touch</h2>
                         <div className="flex gap-10 items-center text-xl pt-10 lg:pl-5">
                             <SiGithub className="text-3xl cursor-pointer" onClick={onGithub}/>
                             <img src={ln} alt="" className="w-[30px] cursor-pointer" onClick={onLinkedin}/>
