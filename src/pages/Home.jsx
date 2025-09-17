@@ -25,7 +25,7 @@ export default function Home(){
                 <div className='pt-7'>
                     <div className='pt-7'>
                         <a
-                            href="https://drive.google.com/uc?export=download&id=19dTX4IUpO_pSog9bErC143rf-E4P6S5Z"
+                            href="https://drive.google.com/uc?export=download&id=1w8-LbrkNUkXzQoaQTnC2vXomvGOBH0K8"
                             target="_blank"
                             rel="noopener noreferrer"
                             className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-700 transition duration-300'
