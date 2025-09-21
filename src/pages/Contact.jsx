@@ -1,4 +1,4 @@
-import { SiGithub, SiLinkedin, SiMailchimp, SiMapbox, SiPhonepe } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiLinphone, SiMailchimp, SiMapbox, SiPhonepe } from "react-icons/si";
 import leetcode from '../img/leetcode.png';
 import x from '../img/twitter (1).png';
 import ln from '../img/linkedin (1).png';
@@ -42,9 +42,9 @@ export default function Contact(){
                             <img src={leetcode} alt="" className="w-[30px] cursor-pointer" onClick={onLeetcode}/>
                         </div>
                         <div className="pt-10">
-                            <p className="flex items-center"><span className="mr-8"><FiPhone/></span>+91 9025758149</p>
-                            <p className="flex items-center pt-7"><span className="mr-8"><FiMail/></span>rkarthikeyan578@gmail.com</p>
-                            <p className="flex items-center pt-7"><span className="mr-8"><FiMap/></span>Tiruchengode, Tamil Nadu, India</p>
+                            <p className="flex items-center"><span className="mr-8"><FiPhone className="text-green-300"/></span>+91 9025758149</p>
+                            <p className="flex items-center pt-7"><span className="mr-8"><FiMail className="text-red-300"/></span>rkarthikeyan578@gmail.com</p>
+                            <p className="flex items-center pt-7"><span className="mr-8"><FiMap className="text-blue-300"/></span>Tiruchengode, Tamil Nadu, India</p>
                         </div>
                         <div></div>
                     </div>

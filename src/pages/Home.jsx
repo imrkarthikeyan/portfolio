@@ -1,4 +1,3 @@
-
 import rk from '../img/rk4.jpg';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -33,7 +32,6 @@ export default function Home(){
                             Download CV
                         </a>
                     </div>
-
                 </div>
             </div>
             <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[28vw] flex items-center lg:mt-7'>
