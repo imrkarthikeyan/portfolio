@@ -1,12 +1,10 @@
 import { FiExternalLink } from "react-icons/fi";
-import { SiFirebase, SiFlask, SiPython, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
 import java from '../img/java.png';
 import opm from '../img/openWeatherMap api.png';
 import bms from '../img/bms-img.png';
 import rk_servehub from '../img/rk-sh.mp4';
 import weather from '../img/live weather.mp4';
-import chaminiseek from '../img/chaminiseek.png';
-import python from '../img/python.png';
 import bmsv from '../img/bms.mp4';
 import rks from '../img/rk-s.mp4';
 import mk from '../img/mobile-kitchen.png';
@@ -26,13 +24,6 @@ export default function Project(){
     }
     const onLwgithub=()=>{
         window.open("https://github.com/imrkarthikeyan/weather-application","_blank")
-    }
-
-    const onChaminiseek=()=>{
-        window.open("https://chaminiseek.vercel.app/","_blank");
-    }
-    const onChGithub=()=>{
-        window.open("https://github.com/imrkarthikeyan/AI-Lab-Frontend","_blank");
     }
 
     const onBankingSystem=()=>{
@@ -186,47 +177,6 @@ export default function Project(){
                 </div>
                 </div>
 
-                </div>
-
-                <div className="text-white pt-4">
-                    <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
-                    <video
-                        src={chaminiseek}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-auto object-cover"
-                    />
-                    {/* <img src={hms} alt="" /> */}
-                    <div className="p-4">
-                        <div className="flex justify-between items-center">
-                        <h1 className="text-xl font-bold">Chaminiseek</h1>
-                        <FiExternalLink className="cursor-pointer" onClick={onChGithub}/>
-                        </div>
-                        <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onChaminiseek}>
-                            chaminiseek.vercel.app
-                        </p>
-                        <div className="text-left flex flex-wrap gap-1 pt-3">
-                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                            <SiReact className="text-cyan-300" />
-                            <p className="text-sm">React</p>
-                        </div>
-                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                            <SiTailwindcss className="text-blue-500" />
-                            <p className="text-sm">Tailwind CSS</p>
-                        </div>
-                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                            <img src={python} alt="Python" className="w-[20px]" />
-                            <p className="text-sm">Python</p>
-                        </div>
-                        <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
-                            <SiFlask className="text-[Black]" />
-                            <p className="text-sm">Flask</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
                 </div>
 
                 <div className="text-white pt-4">
