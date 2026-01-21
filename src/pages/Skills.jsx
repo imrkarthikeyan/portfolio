@@ -5,18 +5,20 @@ import workbench from '../img/workbench.png';
 import python from '../img/python.png';
 import vite from '../img/vite.png';
 import java from '../img/java.png';
+import flask from '../img/flask.png';
+import pycharm from '../img/pycharm.jpg';
 import intellijidea from '../img/intellij idea.png';
 import { motion } from "framer-motion";
-import { SiCss3, SiGeeksforgeeks, SiGit, SiGithub, SiHtml5, SiJavascript, SiPostgresql, SiPostman, SiPython, SiReact, SiSpringboot, SiTailwindcss, SiVite, SiVsco, SiVscodium, SiWorkplace } from "react-icons/si";
+import { SiCss3, SiGeeksforgeeks, SiGit, SiGithub, SiHtml5, SiJavascript, SiPostgresql, SiPostman, SiPycharm, SiPython, SiReact, SiSpringboot, SiTailwindcss, SiVite, SiVsco, SiVscodium, SiWorkplace } from "react-icons/si";
 
 export default function Skills(){
     return(
         <div className="text-white pt-10 justify-center flex flex-col text-center bg-gray-950 bg-cover min-h-screen">
             <div className='pt-5'>
-                <h1 className="text-3xl font-bold mb-5 text-[DodgerBlue] relative inline-block font-[500]">
-                    <span className="absolute mr-1 top-1/2 left-[-60px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
+                <h1 className="lg:text-6xl text-5xl  font-bold mb-5 text-[DodgerBlue] relative inline-block font-[500]">
+                    <span className="absolute mr-1 top-1/2 left-[-60px] w-[50px] block h-[3px] ml-1 bg-[DodgerBlue]"></span>
                     Skills
-                    <span className="absolute top-1/2 right-[-55px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
+                    <span className="absolute top-1/2 right-[-56px] w-[50px] block h-[3px] ml-2 bg-[DodgerBlue]"></span>
                 </h1>
             </div>
             <div className='grid lg:grid-cols-6  grid-cols-3 gap-4 lg:pl-30 lg:px-30 lg:gap-5 mb-5 p-5'>
@@ -89,21 +91,7 @@ export default function Skills(){
                         <p className='p-3 pt-5 font-semibold'>Java</p>
                     </div>
                 </motion.div>
-                
-                <motion.div
-                    className='cursor-pointer'
-                    initial={{opacity:0, y:50}}
-                    whileInView={{opacity:1, y:0}}
-                    whileHover={{scale:1.1}}
-                    viewport={{once:true,amount:0.3}}
-                    transition={{duration:0.5}}
-                >
-                    <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
-                        <img src={python} alt="" className='w-[70px]'/>
-                        <p className='p-3 pt-5 font-semibold'>Python</p>
-                    </div>
-                </motion.div>
-                
+
                 <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
@@ -127,10 +115,25 @@ export default function Skills(){
                     transition={{duration:0.5}}
                 >
                     <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
-                        <SiTailwindcss className='text-7xl w-[70px] text-blue-500'/>
-                        <p className='p-3 pt-5 font-semibold'>Tailwind</p>
+                        <img src={python} alt="" className='w-[70px]'/>
+                        <p className='p-3 pt-5 font-semibold'>Python</p>
                     </div>
                 </motion.div>
+
+                <motion.div
+                    className='cursor-pointer'
+                    initial={{opacity:0, y:50}}
+                    whileInView={{opacity:1, y:0}}
+                    whileHover={{scale:1.1}}
+                    viewport={{once:true,amount:0.3}}
+                    transition={{duration:0.5}}
+                >
+                    <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
+                        <img src={flask} alt="" className='w-[70px]'/>
+                        <p className='p-3 pt-5 font-semibold'>Flask</p>
+                    </div>
+                </motion.div>
+                
                 
                 <motion.div
                     className='cursor-pointer'
@@ -145,8 +148,8 @@ export default function Skills(){
                         <p className='p-3 pt-5 font-semibold'>MySQL</p>
                     </div>
                 </motion.div>
-                
-                {/* <motion.div
+
+                <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
                     whileInView={{opacity:1, y:0}}
@@ -155,10 +158,11 @@ export default function Skills(){
                     transition={{duration:0.5}}
                 >
                     <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
-                        <SiPostgresql className='text-7xl w-[70px] text-blue-500'/>
-                        <p className='p-3 pt-5 font-semibold'>Postgresql</p>
+                        <SiTailwindcss className='text-7xl w-[70px] text-blue-500'/>
+                        <p className='p-3 pt-5 font-semibold'>Tailwind</p>
                     </div>
-                </motion.div> */}
+                </motion.div>
+                
                 
                 <motion.div
                     className='cursor-pointer'
@@ -188,19 +192,7 @@ export default function Skills(){
                     </div>
                 </motion.div>
                 
-                <motion.div
-                    className='cursor-pointer'
-                    initial={{opacity:0, y:50}}
-                    whileInView={{opacity:1, y:0}}
-                    whileHover={{scale:1.1}}
-                    viewport={{once:true,amount:0.3}}
-                    transition={{duration:0.5}}
-                >
-                    <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
-                        <img src={workbench} alt="" className='w-[80px]'/>
-                        <p className='p-3 pt-5 font-semibold'>Workbench</p>
-                    </div>
-                </motion.div>
+                
                 
                 <motion.div
                     className='cursor-pointer'
@@ -215,7 +207,7 @@ export default function Skills(){
                         <p className='p-3 pt-5 font-semibold'>Postman</p>
                     </div>
                 </motion.div>
-                
+
                 <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
@@ -225,12 +217,29 @@ export default function Skills(){
                     transition={{duration:0.5}}
                 >
                     <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
-                        <img src={leetcode} alt="" className='w-[70px]'/>
-                        <p className='p-3 pt-5 font-semibold'>Leetcode</p>
+                        <img src={workbench} alt="" className='w-[80px]'/>
+                        <p className='p-3 pt-5 font-semibold'>Workbench</p>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    className='cursor-pointer'
+                    initial={{opacity:0, y:50}}
+                    whileInView={{opacity:1, y:0}}
+                    whileHover={{scale:1.1}}
+                    viewport={{once:true,amount:0.3}}
+                    transition={{duration:0.5}}
+                >
+                    <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
+                        <SiPostgresql className='text-7xl w-[70px] text-blue-500'/>
+                        <p className='p-3 pt-5 font-semibold'>pgAdmin</p>
                     </div>
                 </motion.div>
                 
-                <motion.div
+
+                
+                
+                {/* <motion.div
                     className='cursor-pointer'
                     initial={{opacity:0, y:50}}
                     whileInView={{opacity:1, y:0}}
@@ -242,7 +251,7 @@ export default function Skills(){
                         <SiGeeksforgeeks className='text-7xl w-[70px] text-green-500'/>
                         <p className='p-3 pt-5 font-semibold'>GeeksForGeeks</p>
                     </div>
-                </motion.div>
+                </motion.div> */}
                 
                 <motion.div
                     className='cursor-pointer'
@@ -255,6 +264,20 @@ export default function Skills(){
                     <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
                         <img src={intellijidea} alt="" className='w-[70px]'/>
                         <p className='p-3 pt-5 font-semibold'>Intellij Idea</p>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    className='cursor-pointer'
+                    initial={{opacity:0, y:50}}
+                    whileInView={{opacity:1, y:0}}
+                    whileHover={{scale:1.1}}
+                    viewport={{once:true,amount:0.3}}
+                    transition={{duration:0.5}}
+                >
+                    <div className='border border-[Gray] rounded-lg bg-gray-900 text-center items-center flex flex-col p-5'>
+                        <img src={pycharm} alt="" className='w-[70px]'/>
+                        <p className='p-3 pt-5 font-semibold'>Pycharm</p>
                     </div>
                 </motion.div>
                 

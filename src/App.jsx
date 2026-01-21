@@ -63,7 +63,8 @@ function App() {
       />
 
       <section ref={homeRef}>
-        <Home onNext={()=>scrollTo(aboutRef)}/>
+        <Home onProject={() => scrollTo(projectRef, 'project')} />
+
       </section>
 
       <section ref={aboutRef}>

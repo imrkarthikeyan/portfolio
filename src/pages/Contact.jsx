@@ -25,10 +25,10 @@ export default function Contact(){
     return(
         <div className="min-h-screen bg-gray-950 text-center text-center items-center flex flex-col pt-10">
             <div className="pt-5">
-                <h1 className="text-3xl font-bold mb-5 text-[DodgerBlue] relative inline-block font-[500]">
-                    <span className="absolute mr-1 top-1/2 left-[-60px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
+                <h1 className="lg:text-6xl text-5xl  font-bold mb-5 text-[DodgerBlue] relative inline-block font-[500]">
+                    <span className="absolute mr-1 top-1/2 left-[-60px] w-[50px] block h-[3px] ml-1 bg-[DodgerBlue]"></span>
                     Contact
-                    <span className="absolute top-1/2 right-[-55px] w-[45px] block h-[2px] ml-2 bg-[DodgerBlue]"></span>
+                    <span className="absolute top-1/2 right-[-56px] w-[50px] block h-[3px] ml-2 bg-[DodgerBlue]"></span>
                 </h1>
             </div>
             <div className="p-5 lg:pl-60  text-center lg:flex lg:items-center w-full lg:mr-50">
@@ -100,7 +100,7 @@ export default function Contact(){
                         <div className="flex text-center justify-center pt-7">
                             <button
                             type="submit"
-                            className="border rounded w-[70px] p-1 flex text-center justify-center bg-gray-700 hover:bg-gray-600 border-gray-400"
+                            className="border cursor-pointer rounded w-[70px] p-1 flex text-center justify-center bg-gray-700 hover:bg-gray-600 border-gray-400"
                             >
                             Send
                             </button>

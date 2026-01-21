@@ -1,44 +1,74 @@
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import rk from "../img/rk4.jpg";
 
-import rk from '../img/rk4.jpg';
-import { Typewriter } from 'react-simple-typewriter';
+export default function Home({ onProject }) {
 
-export default function Home(){
-    return(
-        <div className="bg-cover bg-gray-950 lg:gap-30 gap-10 w-full min-h-screen bg-center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 text-white items-center lg:pt-0 pt-20">
-            <div className='items-center lg:pl-70 text-center'>
-                <h1 className='text-5xl pb-5 pt-4'>Hello, Myself</h1>
-                <h2 className='pb-7 font-bold text-6xl text-[Yellow] drop-shadow-[2px_2px_Orange]'>Karthikeyan R</h2>
-                <div className='pb-5 text-2xl'>
-                    <Typewriter
-                        words={['Aspiring Software Developer']}
-                        loop={0}
-                        cursor
-                        cursorStyle={false}
-                        typeSpeed={80}
-                        deleteSpeed={50}
-                        delaySpeed={2000}
-                    />
-                    <span className='text-[DodgerBlue] ml-1 animate-blink'>|</span>
-                </div>
+  return (
+    <div className="pt-20 lg:pt-0 relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#020617] via-[#020617] to-[#020617] text-white">
 
-                <p className='text-xl'>3rd year B.Tech Information Technology</p>
-                <div className='pt-7'>
-                    <div className='pt-7'>
-                        <a
-                            href="https://drive.google.com/uc?export=download&id=1w8-LbrkNUkXzQoaQTnC2vXomvGOBH0K8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className='inline-block bg-[DodgerBlue] py-4 px-8 rounded-lg text-white font-semibold hover:bg-blue-700 transition duration-300'
-                        >
-                            Download CV
-                        </a>
-                    </div>
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-10 left-10 h-96 w-96 rounded-full bg-[DodgerBlue]/30 blur-3xl" />
+        <div className="absolute bottom-10 right-10 h-[420px] w-[420px] rounded-full bg-yellow-400/30 blur-3xl" />
+        <div className="absolute top-1/2 right-1/3 h-80 w-80 rounded-full bg-orange-500/20 blur-3xl" />
+      </div>
 
-                </div>
-            </div>
-            <div className='text-center p-20 lg:p-5 md:pl-37 max-w lg:w-[28vw] flex items-center lg:mt-7'>
-                <img className='rounded-2xl w-full h-auto' src={rk} alt="Profile image" />
-            </div>
+      <div className="relative grid min-h-screen grid-cols-1 items-center gap-6 px-6 lg:grid-cols-2 lg:px-28">
+
+        <div className="text-center lg:text-left">
+          <h1 className="lg:text-5xl text-4xl md:text-6xl font-light mb-6">
+            Hello, Myself
+          </h1>
+
+          <h2 className="lg:text-6xl text-5xl md:text-7xl leading-tight font-extrabold mb-8 bg-gradient-to-r from-yellow-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+            Karthikeyan R
+          </h2>
+
+          <div className="text-2xl md:text-3xl pb-2 mb-6 flex justify-center lg:justify-start">
+            <Typewriter
+              words={["Aspiring Software Developer"]}
+              loop={0}
+              cursor
+              typeSpeed={90}
+              deleteSpeed={0}
+              delaySpeed={2000}
+            />
+          </div>
+
+          <p className="text-xl md:text-2xl text-gray-300 mb-10">
+            Pre Final Year B.Tech – Information Technology
+          </p>
+
+          <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
+            <a
+              href="https://drive.google.com/file/d/1vl1fEWKk_yLVp_bNeuxAEiBGSK3vEi82/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl bg-[DodgerBlue] px-10 py-5 text-lg font-semibold shadow-xl transition hover:scale-105 hover:bg-blue-600"
+            >
+              Download CV
+            </a>
+
+            <button
+              onClick={onProject}
+              className="rounded-2xl cursor-pointer border-2 border-yellow-400 px-10 py-5 text-lg font-semibold text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+            >
+              View Projects
+            </button>
+          </div>
         </div>
-    )
+
+
+        <div className="flex justify-center">
+          <div className="relative rounded-3xl p-3 bg-gradient-to-tr from-yellow-400 via-orange-400 to-blue-500 shadow-2xl">
+            <img
+              src={rk}
+              alt="Profile"
+              className="h-[340px] w-[340px] md:h-[460px] md:w-[460px] object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
