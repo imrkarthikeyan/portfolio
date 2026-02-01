@@ -81,20 +81,20 @@ export default function Contact(){
                             type="text"
                             name="name"
                             placeholder="Name"
-                            className="border rounded bg-white text-[Black] pl-3 lg:w-[380px] h-10"
+                            className="border rounded bg-white text-[Black] pl-3 w-full xl:w-[340px] 2xl:w-[380px] h-10"
                             required
                         />
                         <input
                             type="email"
                             name="email"
                             placeholder="Mail"
-                            className="border rounded bg-white text-[Black] pl-3 lg:w-[380px] h-10"
+                            className="border rounded bg-white text-[Black] pl-3 w-full xl:w-[340px] 2xl:w-[380px] h-10"
                             required
                         />
                         <textarea
                             name="message"
                             placeholder="Message"
-                            className="border rounded bg-white text-black pl-3 pt-2 lg:w-[380px] h-40 resize-none"
+                            className="border rounded bg-white text-black pl-3 pt-2 w-full xl:w-[340px] 2xl:w-[380px] h-40 resize-none"
                             required
                         />
                         <div className="flex text-center justify-center pt-7">

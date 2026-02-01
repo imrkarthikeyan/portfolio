@@ -1,6 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import rk from "../img/rk4.jpg";
+import rk5 from "../img/rk5.jpeg";
 
 export default function Home({ onProject }) {
 
@@ -62,7 +63,7 @@ export default function Home({ onProject }) {
         <div className="flex justify-center">
           <div className="relative rounded-3xl p-3 bg-gradient-to-tr from-yellow-400 via-orange-400 to-blue-500 shadow-2xl">
             <img
-              src={rk}
+              src={rk5}
               alt="Profile"
               className="h-[340px] w-[340px] md:h-[460px] md:w-[460px] object-cover rounded-3xl"
             />
