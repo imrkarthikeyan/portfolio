@@ -1,6 +1,5 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import rk from "../img/rk4.jpg";
 import rk5 from "../img/rk5.jpeg";
 
 export default function Home({ onProject }) {
@@ -37,7 +36,7 @@ export default function Home({ onProject }) {
           </div>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10">
-            Pre Final Year B.Tech – Information Technology
+            Final Year B.Tech – Information Technology
           </p>
 
           <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
