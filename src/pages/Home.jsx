@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import rk5 from "../img/rk5.jpeg";
+import rk5 from "../img/karthikeyan profile.png";
 
 export default function Home({ onProject }) {
 

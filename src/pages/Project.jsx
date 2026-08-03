@@ -1,5 +1,5 @@
 import { FiExternalLink } from "react-icons/fi";
-import { SiFirebase, SiFlask, SiOpenai, SiPostgresql, SiPython, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
+import { SiClaude, SiFastapi, SiFirebase, SiFlask, SiOpenai, SiPostgresql, SiPython, SiReact, SiRedis, SiSpringboot, SiTailwindcss } from "react-icons/si";
 import java from '../img/java.png';
 import opm from '../img/openWeatherMap api.png';
 import bms from '../img/bms-img.png';
@@ -51,6 +51,13 @@ export default function Project() {
     }
     const onAuctonixGithub = () => {
         window.open("https://github.com/imrkarthikeyan/Auctonix", "_blank")
+    }
+
+    const onStudentActions = () => {
+        window.open("https://student-actions.onrender.com/", "_blank")
+    }
+    const onStudentActionsGithub = () => {
+        window.open("https://github.com/imrkarthikeyan/Student-Actions", "_blank")
     }
 
     return (
@@ -335,6 +342,56 @@ export default function Project() {
                                 <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
                                     <img src={opm} alt="openWeatherMap api" className="w-[20px]" />
                                     <p className="text-sm">openWeatherMap api</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="text-white pt-4">
+                    <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
+                        <div className="relative w-full h-[220px] overflow-hidden bg-gray-200 rounded-lg shadow-xl flex justify-center items-start">
+                            <iframe
+                                src="https://student-actions.onrender.com/"
+                                title="Student Actions (Clipninja)"
+                                className="absolute top-0 left-0 w-[1740px] h-[1100px] origin-top-left scale-[0.22] border-none rounded-md"
+                                loading="lazy"
+                            />
+                        </div>
+
+                        <div className="p-4">
+                            <div className="flex justify-between items-center">
+                                <h1 className="text-xl font-bold">Student Actions (Clipninja)</h1>
+                                <FiExternalLink className="cursor-pointer" onClick={onStudentActionsGithub} />
+                            </div>
+                            <p className="text-left text-sm text-gray-400 pt-1 cursor-pointer hover:underline" onClick={onStudentActions}>
+                                student-actions.onrender.com
+                            </p>
+                            <div className="text-left flex flex-wrap gap-1 pt-3">
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiClaude className="text-orange-400" />
+                                    <p className="text-sm">Claude Code</p>
+                                </div>
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiPython className="text-yellow-400" />
+                                    <p className="text-sm">Python</p>
+                                </div>
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiReact className="text-cyan-300" />
+                                    <p className="text-sm">React</p>
+                                </div>
+                                <div className="w-full" />
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiTailwindcss className="text-blue-500" />
+                                    <p className="text-sm">Tailwind CSS</p>
+                                </div>
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiRedis className="text-red-500" />
+                                    <p className="text-sm">Redis</p>
+                                </div>
+                                <div className="inline-flex items-center bg-gray-700 px-2 gap-2">
+                                    <SiFastapi className="text-teal-400" />
+                                    <p className="text-sm">FastAPI</p>
                                 </div>
                             </div>
                         </div>
