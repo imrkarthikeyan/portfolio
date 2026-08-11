@@ -43,7 +43,7 @@ export default function Contact(){
                         </div>
                         <div className="pt-10">
                             <p className="flex items-center"><span className="mr-8"><FiPhone/></span>+91 9025758149</p>
-                            <p className="flex items-center pt-7"><span className="mr-8"><FiMail/></span>rkarthikeyan578@gmail.com</p>
+                            <p className="flex items-center pt-7"><span className="mr-8"><FiMail/></span>rkarthikeyan.swe@gmail.com</p>
                             <p className="flex items-center pt-7"><span className="mr-8"><FiMap/></span>Tiruchengode, Tamil Nadu, India</p>
                         </div>
                         <div></div>
