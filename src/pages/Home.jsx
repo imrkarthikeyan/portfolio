@@ -41,7 +41,7 @@ export default function Home({ onProject }) {
 
           <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
             <a
-              href="https://drive.google.com/file/d/1l5nshMnqb2Cl9VtakY-MPLFzmEeLYkED/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1GdVm0f1IiFgJmlNP0qTlbL07EXK-2JFb/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl bg-[DodgerBlue] px-10 py-5 text-lg font-semibold shadow-xl transition hover:scale-105 hover:bg-blue-600"
