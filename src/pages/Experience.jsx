@@ -50,7 +50,7 @@ export default function Experience() {
                 </p>
               </div>
 
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-1 leading-snug tracking-tight">
+              <h2 className="text-3xl md:text-3xl font-bold text-white mb-1 leading-snug tracking-tight">
                 {exp.title}
               </h2>
 
@@ -58,7 +58,7 @@ export default function Experience() {
                 {exp.company}
               </p>
 
-              <p className="text-3xl md:text-base  leading-relaxed max-w-7xl font-normal">
+              <p className="text-xl lg:text-lg md:text-base  leading-relaxed max-w-7xl font-normal">
                 {exp.paragraph}
               </p>
             </motion.div>
