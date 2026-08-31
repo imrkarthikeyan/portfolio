@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+    font-family: "Aeonik", "Aeonik Regular", sans-serif;
+}
+
+html,
+body,
+#root {
+    font-family: "Aeonik", "Aeonik Regular", sans-serif;
+}

@@ -348,7 +348,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div className="text-white pt-4">
+                {/* <div className="text-white pt-4">
                     <div className="border rounded-md border-gray-700 bg-gray-900 overflow-hidden w-full max-w-[380px]">
                         <div className="relative w-full h-[220px] overflow-hidden bg-gray-200 rounded-lg shadow-xl flex justify-center items-start">
                             <iframe
@@ -396,7 +396,7 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>
