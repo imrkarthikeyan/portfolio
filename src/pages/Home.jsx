@@ -36,7 +36,7 @@ export default function Home({ onProject }) {
           </div>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10">
-            Final Year B.Tech – Information Technology
+            Final-Year B.Tech – Information Technology
           </p>
 
           <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
