@@ -12,11 +12,11 @@ export default function Experience() {
     },
     {
       number: "02",
-      title: "SDE Intern",
+      title: "Full-stack Development Engineer Intern",
       company: "Nexgen Nextopia Pvt. Ltd.",
-      duration: "Augast 2026 – Present",
+      duration: "August 2026 – September 2026 · 2 Months",
       isCurrent: true,
-      paragraph: "Working as a Software Development Engineer Intern as part of a collaborative development team building scalable and maintainable software systems. Developing responsive and reusable frontend components using React.js and TypeScript, while contributing to backend development using Java and Spring Boot, including RESTful APIs and business logic. Collaborating with developers to design, develop, test, and integrate features across the full stack. Gaining practical experience in scalable system design, API integration, debugging, version control, and software development practices."
+      paragraph: "Worked as a Full-stack Development Engineer Intern as part of a collaborative development team building scalable and maintainable software systems. Developing responsive and reusable frontend components using React.js and TypeScript, while contributing to backend development using Java and Spring Boot, including RESTful APIs and business logic. Collaborating with developers to design, develop, test, and integrate features across the full stack. Gaining practical experience in scalable system design, API integration, debugging, version control, and software development practices."
     }
   ];
 
